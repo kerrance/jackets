@@ -47,8 +47,7 @@
 
       a:link {
         color: var(--orange);
-        text-decoration: underline var(--orange) 0.1rem;
-        text-underline-offset: 0.1rem;
+        text-decoration: none;
       }
 
       a:visited {
@@ -58,19 +57,22 @@
       a:active,
       a:hover {
         color: var(--mid-orange);
-        text-decoration: underline var(--mid-orange) 0.1rem;
+        text-decoration: underline var(--mid-orange) 0.4rem;
       }
 
       a:focus {
-        outline: var(--orange) auto 1px;
+        outline: var(--orange) auto 4rem;
         outline-offset: 0.2rem;
-        text-decoration: none;
       }
 
-      .container {
-        max-width: 55vw;
-        margin: 0 auto;
-        padding: 2rem 0;
+      a[href^="tel:"] {
+        font-size: 4rem;
+        font-weight: bold;
+      }
+
+      a[href^="tel:"]:active,
+      a[href^="tel:"]:hover {
+        text-decoration: underline var(--mid-orange) 0.6rem;
       }
 
       h1 {
@@ -87,6 +89,16 @@
         padding-bottom: 1rem;
       }
 
+      .container {
+        max-width: 60vw;
+        margin: 0 auto;
+        padding: 2rem 0;
+      }
+
+      .container p:last-of-type {
+        padding-bottom: 0;
+      }
+
       .bg-mid-orange {
         background-color: var(--mid-orange);
       }
@@ -95,13 +107,14 @@
         background-color: var(--yellow);
       }
 
+      .bg-yellow h2::selection,
+      .bg-yellow p::selection {
+        background-color: var(--mid-orange);
+      }
+
       .bg-black {
         color: white;
         background-color: var(--black);
-      }
-
-      a[href^="tel:"] {
-        font-size: 3rem;
       }
 
       footer {
@@ -127,12 +140,22 @@
 
           <p>Proper jackets, piping hot, piled high.</p>
 
-          <p>A British legend served just how you like it with all of your favourite toppings.</p>
+          <p>A British legend served how you like it with all your favourite toppings.</p>
 
           <p>
-            Choose from classics like beans and cheese, spicy chilli, a cracking chicken curry, or pick from our weekly
-            specials.
+            Choose from classics like beans &amp; cheese, spicy chilli, a cracking chicken curry and more. Or pick from
+            one of our delicious weekly specials.
           </p>
+        </div>
+      </section>
+
+      <section class="bg-yellow">
+        <div class="container">
+          <h2>Get yours</h2>
+
+          <p>Every Wednesday, Saturday &amp; Sunday, 9:30am&ndash;4:00pm.</p>
+
+          <p>Eastbourne Borough Market, Terminus Road (between Barclays and Halifax).</p>
         </div>
       </section>
 
@@ -141,6 +164,8 @@
           <h2>Speak to Jimmy</h2>
 
           <p><a href="tel:+447895767939">07895 767939</a></p>
+
+          <p>Available for markets, festivals and catering events.</p>
         </div>
       </section>
     </main>
