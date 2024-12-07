@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jimmies Jackets</title>
     <style>
+      :root {
+        --orange: #ff6917;
+        --mid-orange: #ffaf18;
+        --yellow: #f2c311;
+        --black: #333333;
+      }
+
       @font-face {
         font-family: "Neue Aachen Pro";
         src: url("neueaachenproregular-webfont.woff2") format("woff2"),
@@ -15,38 +22,57 @@
 
       body {
         font-family: "Neue Aachen Pro", Arial, sans-serif;
-        background-color: #f4f4f4;
         margin: 0;
         padding: 0;
-        color: #333;
+        color: var(--black);
         font-size: 20px;
+        line-height: 1.4;
+      }
+
+      ::selection {
+        background-color: var(--yellow);
+      }
+
+      a:link {
+        color: var(--orange);
+        text-decoration: underline var(--orange) 0.1rem;
+        text-underline-offset: 0.1rem;
+      }
+
+      a:visited {
+        color: var(--orange);
+      }
+
+      a:active,
+      a:hover {
+        color: var(--mid-orange);
+        text-decoration: underline var(--mid-orange) 0.1rem;
+      }
+
+      a:focus {
+        outline: var(--orange) auto 1px;
+        outline-offset: 0.2rem;
+        text-decoration: none;
       }
 
       header {
-        background-color: #ff6917;
-        padding: 1em;
-        text-align: centre;
-        color: white;
+        background-color: var(--orange);
       }
 
-      main {
-        padding: 2em;
+      h1 {
+        text-align: centre;
+        color: white;
+        font-size: 6rem;
       }
 
       footer {
-        background-color: #ffaf18;
-        color: white;
-        text-align: centre;
-        padding: 1em;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+        background-color: var(--mid-orange);
       }
 
       .container {
-        max-width: 800px;
+        max-width: 80vw;
         margin: 0 auto;
-        padding: 1em;
+        padding: 1rem;
       }
     </style>
   </head>
@@ -60,7 +86,7 @@
     <main>
       <section>
         <div class="container">
-          <h2>About</h2>
+          <h2>Baked Jacket Potatoes</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt in velit sit amet porta. Praesent
             auctor eleifend augue sed vulputate. Curabitur dictum libero urna, ut tristique quam placerat at. Fusce et
@@ -69,12 +95,15 @@
             consequat laoreet. Duis sed augue non dui porttitor tincidunt cursus vel metus. Maecenas non lectus varius,
             congue arcu sed, aliquam metus.
           </p>
+
+          <h2>Speak to Jimmy</h2>
+          <p>07895 767939</p>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="container">&copy; 2024 Jimmies Jackets. Website by <a href="">Kerrance</a></div>
+      <div class="container">&copy; 2024 Jimmies Jackets. Website by <a href="//kerrance.github.io/">Kerrance</a></div>
     </footer>
   </body>
 </html>
