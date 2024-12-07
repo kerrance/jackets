@@ -2,12 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="author" content="Jimmy" />
+    <meta name="description" content="Baked Jacket Potatoes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ff6917" />
     <title>Jimmies Jackets</title>
     <style>
       :root {
         --orange: #ff6917;
-        --mid-orange: #ffaf18;
+        --mid-orange: #f89613;
         --yellow: #f2c311;
         --black: #333333;
       }
@@ -20,13 +23,19 @@
         font-style: normal;
       }
 
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
       body {
         font-family: "Neue Aachen Pro", Arial, sans-serif;
         margin: 0;
         padding: 0;
         color: var(--black);
-        font-size: 20px;
+        font-size: 32px;
         line-height: 1.4;
+        text-align: center;
       }
 
       ::selection {
@@ -55,24 +64,49 @@
         text-decoration: none;
       }
 
-      header {
-        background-color: var(--orange);
+      .container {
+        max-width: 55vw;
+        margin: 0 auto;
+        padding: 2rem 0;
       }
 
       h1 {
-        text-align: centre;
-        color: white;
         font-size: 6rem;
+        color: var(--orange);
       }
 
-      footer {
+      h2 {
+        font-size: 4rem;
+        padding-bottom: 1rem;
+      }
+
+      p {
+        padding-bottom: 1rem;
+      }
+
+      .bg-mid-orange {
         background-color: var(--mid-orange);
       }
 
-      .container {
-        max-width: 80vw;
-        margin: 0 auto;
-        padding: 1rem;
+      .bg-yellow {
+        background-color: var(--yellow);
+      }
+
+      .bg-black {
+        color: white;
+        background-color: var(--black);
+      }
+
+      a[href^="tel:"] {
+        font-size: 3rem;
+      }
+
+      footer {
+        text-align: left;
+      }
+
+      .right {
+        float: right;
       }
     </style>
   </head>
@@ -84,26 +118,37 @@
     </header>
 
     <main>
-      <section>
+      <section class="bg-mid-orange">
         <div class="container">
           <h2>Baked Jacket Potatoes</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt in velit sit amet porta. Praesent
-            auctor eleifend augue sed vulputate. Curabitur dictum libero urna, ut tristique quam placerat at. Fusce et
-            sollicitudin urna. Donec tempus porttitor laoreet. Quisque vitae ullamcorper urna, ac aliquet lorem. Cras
-            gravida arcu leo, ac consectetur ipsum ullamcorper nec. Maecenas commodo feugiat fringilla. Duis consequat
-            consequat laoreet. Duis sed augue non dui porttitor tincidunt cursus vel metus. Maecenas non lectus varius,
-            congue arcu sed, aliquam metus.
-          </p>
 
+          <p>Proper jackets, piping hot, piled high.</p>
+
+          <p>A British legend served just how you like it with all of your favourite toppings.</p>
+
+          <p>
+            Choose from classics like beans and cheese, spicy chilli, a cracking chicken curry, or pick from our weekly
+            specials.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
           <h2>Speak to Jimmy</h2>
-          <p>07895 767939</p>
+
+          <p><a href="tel:+447895767939">07895 767939</a></p>
         </div>
       </section>
     </main>
 
-    <footer>
-      <div class="container">&copy; 2024 Jimmies Jackets. Website by <a href="//kerrance.github.io/">Kerrance</a></div>
+    <footer class="bg-black">
+      <div class="container">
+        <p>
+          &copy; 2024 Jimmies Jackets
+          <span class="right">Website by <a href="//kerrance.github.io/" target="_blank">Kerrance</a></span>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
