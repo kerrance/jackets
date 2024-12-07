@@ -78,6 +78,13 @@
       h1 {
         font-size: 6rem;
         color: var(--orange);
+        line-height: 6rem;
+      }
+
+      @media only screen and (max-width: 360px) {
+        h1 {
+          word-break: break-all;
+        }
       }
 
       h2 {
@@ -93,6 +100,18 @@
         max-width: 60vw;
         margin: 0 auto;
         padding: 2rem 0;
+      }
+
+      @media only screen and (max-width: 1200px) {
+        .container {
+          max-width: 80vw;
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+        .container {
+          max-width: 90vw;
+        }
       }
 
       .container p:last-of-type {
@@ -117,12 +136,22 @@
         background-color: var(--black);
       }
 
+      header .container {
+        padding: 6rem 0;
+      }
+
       footer {
         text-align: left;
       }
 
-      .right {
+      .credit {
         float: right;
+      }
+
+      @media only screen and (max-width: 800px) {
+        .credit {
+          float: none;
+        }
       }
     </style>
   </head>
@@ -173,8 +202,8 @@
     <footer class="bg-black">
       <div class="container">
         <p>
-          &copy; 2024 Jimmies Jackets
-          <span class="right">Website by <a href="//kerrance.github.io/" target="_blank">Kerrance</a></span>
+          &copy; 2024 Jimmies Jackets.
+          <span class="credit">Website by <a href="//kerrance.github.io/" target="_blank">Kerrance</a></span>
         </p>
       </div>
     </footer>
