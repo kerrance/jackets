@@ -86,6 +86,11 @@
         text-decoration: underline var(--mid-orange) 0.6rem;
       }
 
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
       h1 {
         font-size: 6rem;
         color: var(--orange);
@@ -125,10 +130,6 @@
         }
       }
 
-      .container p:last-of-type {
-        padding-bottom: 0;
-      }
-
       .bg-mid-orange {
         background-color: var(--mid-orange);
       }
@@ -147,12 +148,20 @@
         background-color: var(--black);
       }
 
+      .border-black {
+        border: solid 2px var(--black);
+      }
+
       header .container {
         padding: 6rem 0;
       }
 
       footer {
         text-align: left;
+      }
+
+      footer p {
+        padding-bottom: 0;
       }
 
       .credit {
@@ -186,12 +195,28 @@
             Choose from favourites like beans &amp; cheese, spicy chilli, a cracking chicken curry and more. Or pick
             from one of our delicious weekly specials.
           </p>
+
+          <img
+            src="img/stall.jpg"
+            width="426"
+            height="320"
+            alt="A photo shows a food stall on a high street with a banner saying 'Jimmies Jackets'"
+            class="border-black"
+          />
         </div>
       </section>
 
       <section class="bg-yellow">
         <div class="container">
           <h2>Get yours</h2>
+
+          <img
+            src="img/potato-thumb.png"
+            srcset="img/potato-thumb@2x.png 2x"
+            width="208"
+            height="318"
+            alt="A cartoon illustrated potato holds a big red heart in one hand and gives the 'ok' hand symbol with the other"
+          />
 
           <p>Every Wednesday, Saturday &amp; Sunday, 9:30am&ndash;4:00pm.</p>
 
@@ -204,6 +229,14 @@
           <h2>Speak to Jimmy</h2>
 
           <p><a href="tel:+447895767939">07895 767939</a></p>
+
+          <img
+            src="img/potato-heart.png"
+            srcset="img/potato-heart@2x.png 2x"
+            width="260"
+            height="318"
+            alt="A cartoon illustrated potato holds a big red heart in one hand and gives the 'ok' hand symbol with the other"
+          />
 
           <p>Available for markets, festivals and catering events.</p>
         </div>
