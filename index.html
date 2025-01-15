@@ -27,6 +27,7 @@
         --mid-orange: #f89613;
         --yellow: #f2c311;
         --black: #333333;
+        color-scheme: light dark;
       }
 
       @font-face {
@@ -47,6 +48,7 @@
         margin: 0;
         padding: 0;
         color: var(--black);
+        background-color: light-dark(#fff, var(--black));
         font-size: 32px;
         line-height: 1.4;
         text-align: center;
@@ -93,7 +95,7 @@
 
       h1 {
         font-size: 6rem;
-        color: var(--orange);
+        color: light-dark(var(--orange), var(--yellow));
         line-height: 6rem;
       }
 
@@ -141,6 +143,10 @@
       .bg-yellow h2::selection,
       .bg-yellow p::selection {
         background-color: var(--mid-orange);
+      }
+
+      .bg-white {
+        background-color: white;
       }
 
       .bg-black {
@@ -224,7 +230,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="bg-white">
         <div class="container">
           <h2>Speak to Jimmy</h2>
 
