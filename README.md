@@ -26,7 +26,7 @@ To set up the project locally, follow these steps:
 
 ## Contact
 
-For any inquiries, please contact Jimmy on [+447895767939](tel:+447895767939)
+For any inquiries, please contact Jimmy on +447895 767939.
 
 ## Credits
 
