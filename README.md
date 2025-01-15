@@ -7,23 +7,15 @@ The website includes details about the offerings, location and contact informati
 ## Table of Contents
 
 - [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
+- [Getting Started](#getting-started)
+- [Contact](#contact)
 - [Credits](#credits)
 
 ## Overview
 
 The website is designed to inform visitors about Jimmies Jackets, a food stall that serves baked jacket potatoes. It includes sections for the menu, location, contact information, and more.
 
-## Features
-
-- Responsive design
-- Custom fonts
-- Contact information
-- Location details
-- High-quality images
-
-## Installation
+## Getting Started
 
 To set up the project locally, follow these steps:
 
@@ -31,6 +23,10 @@ To set up the project locally, follow these steps:
    ```sh
    git clone git@github.com:kerrance/jackets.git
    ```
+
+## Contact
+
+For any inquiries, please contact Jimmy on [+447895767939](tel:+447895767939)
 
 ## Credits
 
