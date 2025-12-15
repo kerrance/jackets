@@ -115,20 +115,21 @@
       }
 
       .container {
-        max-width: 60vw;
+        max-width: 90vw;
         margin: 0 auto;
-        padding: 2rem 0;
+        padding: 1rem;
       }
 
-      @media only screen and (max-width: 1200px) {
+      @media only screen and (min-width: 800px) {
         .container {
           max-width: 80vw;
         }
       }
 
-      @media only screen and (max-width: 800px) {
+      @media only screen and (min-width: 1200px) {
         .container {
-          max-width: 90vw;
+          max-width: 1200px;
+          padding: 2rem;
         }
       }
 
@@ -162,6 +163,34 @@
         padding: 6rem 0;
       }
 
+      .have-your-say {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        flex-wrap: nowrap;
+      }
+
+      @media only screen and (min-width: 1200px) {
+        .have-your-say {
+          flex-direction: row;
+          align-items: flex-start;
+        }
+      }
+
+      .have-your-say-quote {
+        flex: 1;
+      }
+
+      blockquote {
+        padding-bottom: 0;
+        text-align: left;
+      }
+
+      .have-your-say-image {
+        flex: 0 0 auto;
+      }
+
       footer {
         text-align: left;
       }
@@ -178,14 +207,6 @@
         .credit {
           float: none;
         }
-      }
-
-      blockquote {
-        padding-bottom: 2rem;
-      }
-
-      section blockquote:last-child {
-        padding-bottom: 0;
       }
     </style>
   </head>
@@ -222,47 +243,42 @@
 
       <section class="bg-yellow">
         <div class="container">
-          <h2>Get yours</h2>
-
-          <img
-            src="img/potato-thumb.png"
-            srcset="img/potato-thumb@2x.png 2x"
-            width="208"
-            height="318"
-            alt="A cartoon illustrated potato holds a big red heart in one hand and gives the 'ok' hand symbol with the other"
-          />
-
-          <p>Thursday, 2pm&ndash;8pm.</p>
-
-          <p>Sunday, 1pm&ndash;8pm.</p>
-
-          <p>Norman's Bay Camping and Caravanning Club.</p>
-        </div>
-      </section>
-
-      <section class="bg-mid-orange">
-        <div class="container">
           <h2>Have your say</h2>
 
-          <blockquote>
-            <p>
-              "We had Jimmies Jackets cater our wedding and they were absolutely brilliant! The jacket potatoes went
-              down a treat! From start to finish they were super transparent, easy to communicate with, and made
-              everything stress-free. Our guests loved the food and we couldn't recommend them enough!"
-            </p>
+          <div class="have-your-say">
+            <div class="have-your-say-quote">
+              <blockquote>
+                <p>
+                  "We had Jimmies Jackets cater our wedding and they were absolutely brilliant! The jacket potatoes went
+                  down a treat! Our guests loved the food and we couldn't recommend them enough!"
+                </p>
 
-            <small>Some kind words from the happy couple, who trusted us with their wedding catering</small>
-          </blockquote>
+                <small>Some kind words from the happy couple, who trusted us with their wedding catering</small>
+              </blockquote>
+            </div>
 
-          <blockquote>
-            <p>
-              "The jacket potato stall is unreal, I thought surely it's just a jacket potato, but you should see the
-              amount of toppings on this bad boy, cheeeeese for days. Truly an awesome lunch ran by lovely people,
-              10/10"
-            </p>
+            <div class="have-your-say-image">
+              <img
+                src="img/potato-thumb.png"
+                srcset="img/potato-thumb@2x.png 2x"
+                width="208"
+                height="318"
+                alt="A cartoon illustrated potato holds a big red heart in one hand and gives the 'ok' hand symbol with the other"
+              />
+            </div>
 
-            <small>A happy customer from our Eastbourne Borough Market stall</small>
-          </blockquote>
+            <div class="have-your-say-quote">
+              <blockquote>
+                <p>
+                  "The jacket potato stall is unreal, I thought surely it's just a jacket potato, but you should see the
+                  amount of toppings on this bad boy, cheeeeese for days. Truly an awesome lunch ran by lovely people,
+                  10/10"
+                </p>
+
+                <small>A happy customer from our Eastbourne Borough Market stall</small>
+              </blockquote>
+            </div>
+          </div>
         </div>
       </section>
 
