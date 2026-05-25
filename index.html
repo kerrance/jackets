@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,6 +15,11 @@
     <meta name="twitter:title" content="Jimmies Jackets" />
     <meta name="twitter:description" content="Baked Jacket Potatoes" />
     <meta name="twitter:image" content="https://jimmiesjackets.com/img/potato-heart@2x.png" />
+    <meta
+      name="description"
+      content="Proper baked jacket potatoes, piping hot and piled high. Available for markets, festivals, weddings and all catering events."
+    />
+    <link rel="canonical" href="https://jimmiesjackets.com/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#ff6917" />
     <title>Jimmies Jackets</title>
@@ -32,7 +37,8 @@
 
       @font-face {
         font-family: "Neue Aachen Pro";
-        src: url("fonts/neueaachenproregular-webfont.woff2") format("woff2"),
+        src:
+          url("fonts/neueaachenproregular-webfont.woff2") format("woff2"),
           url("fonts/neueaachenproregular-webfont.woff") format("woff");
         font-weight: normal;
         font-style: normal;
@@ -74,7 +80,7 @@
       }
 
       a:focus {
-        outline: var(--orange) auto 4rem;
+        outline: var(--orange) auto 4px;
         outline-offset: 0.2rem;
       }
 
@@ -247,14 +253,17 @@
 
           <div class="have-your-say">
             <div class="have-your-say-quote">
-              <blockquote>
-                <p>
-                  "We had Jimmies Jackets cater our wedding and they were absolutely brilliant! The jacket potatoes went
-                  down a treat! Our guests loved the food and we couldn't recommend them enough!"
-                </p>
-
-                <small>Some kind words from the happy couple, who trusted us with their wedding catering</small>
-              </blockquote>
+              <figure>
+                <blockquote>
+                  <p>
+                    "We had Jimmies Jackets cater our wedding and they were absolutely brilliant! The jacket potatoes
+                    went down a treat! Our guests loved the food and we couldn't recommend them enough!"
+                  </p>
+                </blockquote>
+                <figcaption>
+                  Some kind words from the happy couple, who trusted us with their wedding catering
+                </figcaption>
+              </figure>
             </div>
 
             <div class="have-your-say-image">
@@ -263,20 +272,21 @@
                 srcset="img/potato-thumb@2x.png 2x"
                 width="208"
                 height="318"
-                alt="A cartoon illustrated potato holds a big red heart in one hand and gives the 'ok' hand symbol with the other"
+                alt="A cartoon illustrated potato gives a thumbs up"
               />
             </div>
 
             <div class="have-your-say-quote">
-              <blockquote>
-                <p>
-                  "The jacket potato stall is unreal, I thought surely it's just a jacket potato, but you should see the
-                  amount of toppings on this bad boy, cheeeeese for days. Truly an awesome lunch ran by lovely people,
-                  10/10"
-                </p>
-
-                <small>A happy customer from our Eastbourne Borough Market stall</small>
-              </blockquote>
+              <figure>
+                <blockquote>
+                  <p>
+                    "The jacket potato stall is unreal, I thought surely it's just a jacket potato, but you should see
+                    the amount of toppings on this bad boy, cheeeeese for days. Truly an awesome lunch ran by lovely
+                    people, 10/10"
+                  </p>
+                </blockquote>
+                <figcaption>A happy customer from our Eastbourne Borough Market stall</figcaption>
+              </figure>
             </div>
           </div>
         </div>
@@ -293,7 +303,7 @@
             srcset="img/potato-heart@2x.png 2x"
             width="260"
             height="318"
-            alt="A cartoon illustrated potato holds a big red heart in one hand and gives the 'ok' hand symbol with the other"
+            alt="A cartoon illustrated potato holds a big red heart"
           />
 
           <p>Available for markets, festivals, weddings and all catering events.</p>
@@ -305,7 +315,9 @@
       <div class="container">
         <p>
           &copy; 2026 Jimmies Jackets.
-          <span class="credit">Website by <a href="//razorsharp.digital/" target="_blank">Razor Sharp</a></span>
+          <span class="credit"
+            >Website by <a href="//razorsharp.digital/" target="_blank" rel="noopener noreferrer">Razor Sharp</a></span
+          >
         </p>
       </div>
     </footer>
